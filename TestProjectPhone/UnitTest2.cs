@@ -1,11 +1,14 @@
 ﻿using ClassLibrary;
-
-public class UnitTest2
+namespace TestProjectPhone
 {
-    [TestMethod]
-    public void Test_Private_Set_Owner()
+    [TestClass]
+    public class UnitTest2
     {
-        var numerTelefonu = "123456789";
-        Assert.ThrowsException<ArgumentException>(() => new Phone(null, numerTelefonu));
+        [TestMethod]
+        public void Test_Private_Set_Owner()
+        {
+            var numerTelefonu = "123456789";
+            Assert.ThrowsException<ArgumentException>(() => new Phone(null, numerTelefonu));
+        }
     }
 }
