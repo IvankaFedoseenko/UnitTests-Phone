@@ -19,6 +19,8 @@ namespace TestProjectPhone
             //Assert
             Assert.AreEqual(wlasciciel, phone.Owner);
             Assert.AreEqual(numerTelefonu, phone.PhoneNumber);
+            Assert.AreEqual(100, phone.PhoneBookCapacity);
+           
         }
     }
 }
